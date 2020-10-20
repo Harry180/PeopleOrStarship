@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "server=(localdb)\\SqlExpress;Database=PeopleAndStarships; Integrated Security=true;MultipleActiveResultSets=true;"
+  }
+}
