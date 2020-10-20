@@ -1,0 +1,30 @@
+[{
+  "Name": "Netflix",
+  "CrewCount": 100,
+  "WinCount": 0
+},
+  {
+    "Name": "DC",
+    "CrewCount": 4,
+    "WinCount": 0
+  },
+  {
+    "Name": "Marvel",
+    "CrewCount": 1000,
+    "WinCount": 0
+  },
+  {
+    "Name": "Amazon prime",
+    "CrewCount": 11,
+    "WinCount": 0
+  },
+  {
+    "Name": "HboGo",
+    "CrewCount": 37,
+    "WinCount": 0
+  },
+  {
+    "Name": "Disney+",
+    "CrewCount": 40,
+    "WinCount": 0
+  }]

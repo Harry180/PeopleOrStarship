@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using PeopleOrStarship.Data;
 using Microsoft.EntityFrameworkCore;
+using PeopleOrStarship.Service;
 
 namespace PeopleOrStarship
 {
@@ -28,6 +29,7 @@ namespace PeopleOrStarship
             });
 
             services.AddTransient<Seeder>();
+            services.AddTransient<IRandomizeService, RandomizeService>();
             
             services.AddControllersWithViews();
             // In production, the Angular files will be served from this directory

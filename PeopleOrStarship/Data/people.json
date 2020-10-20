@@ -1,0 +1,32 @@
+[
+  {
+    "FirstName": "John",
+    "LastName": "Doe",
+    "MassCount": 0,
+    "WinCount": 0
+  },
+  {
+    "FirstName": "Johny",
+    "LastName": "Doey",
+    "MassCount": 20,
+    "WinCount": 0
+  },
+  {
+    "FirstName": "Johnson",
+    "LastName": "Baby",
+    "MassCount": 1,
+    "WinCount": 0
+  },
+  {
+    "FirstName": "Motylek",
+    "LastName": "Zenek",
+    "MassCount": 6,
+    "WinCount": 0
+  },
+  {
+    "FirstName": "Chase",
+    "LastName": "Pies",
+    "MassCount": 2,
+    "WinCount": 0
+  }
+]
