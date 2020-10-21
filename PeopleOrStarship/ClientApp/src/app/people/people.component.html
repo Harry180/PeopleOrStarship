@@ -1,0 +1,20 @@
+
+<h1 id="tableLabel">People fight</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+<p *ngIf="!people && people?.length < 2"><em>Loading...</em></p>
+
+
+
+<div *ngIf="people">
+      <mat-card class="example-card" *ngFor="let person of people">
+        <mat-card-header>
+          <mat-card-title>{{person.firstName}} {{person.lastName}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>Mass : {{person.massCount}}</p>
+        </mat-card-content>
+      </mat-card>
+  <button type="submit" (click)="fightAgain($event)" title="Fight again!">Fight again!</button>
+</div>

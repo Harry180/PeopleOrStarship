@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using PeopleOrStarship.Data;
@@ -16,47 +17,68 @@ namespace PeopleOrStarship.Service
         }
 
         [HttpGet]
-        public People Get()
+        public List<People> Get()
         {
-            var first = _context.Peoples.FirstOrDefault();
-            var last = _context.Peoples.LastOrDefault();
-            
-            
+            var orderBy = _context.Peoples.OrderBy(x => x.Id);
+            var first = orderBy.FirstOrDefault();
+            var last = orderBy.LastOrDefault();
+
+
             var random = new Random();
-            var id = -1;
-            if (first != null && last != null)
+            var ids = new List<int>();
+            if (first == null || last == null)
             {
-                id = random.Next(first.Id, last.Id);
+                throw new ArgumentException("People not exists in db.");
             }
 
-            var person = _context.Peoples.SingleOrDefault(x => x.Id == id);
-            if (person == null)
+            while (ids.Count() < 2)
+            {
+                var next = random.Next(first.Id, last.Id);
+                if (!ids.Contains(next))
+                {
+                    ids.Add(next);
+                }
+            }
+
+            var people = _context.Peoples.Where(x => ids.Contains(x.Id)).ToList();
+            if (!people.Any())
             {
                 throw new ArgumentNullException();
             }
-            return person;
+
+            return people;
         }
 
-        public Starship GetStarship()
+        public List<Starship> GetStarship()
         {
-            var first = _context.Starships.FirstOrDefault();
-            var last = _context.Starships.LastOrDefault();
-            
-            
+            var orderBy = _context.Starships.OrderBy(x => x.Id);
+            var first = orderBy.FirstOrDefault();
+            var last = orderBy.LastOrDefault();
+
+
             var random = new Random();
-            var id = -1;
-            if (first != null && last != null)
+            var ids = new List<int>();
+            if (first == null || last == null)
             {
-                id = random.Next(first.Id, last.Id);
+                throw new ArgumentException("People not exists in db.");
             }
 
-            var starship = _context.Starships.SingleOrDefault(x => x.Id == id);
-            if (starship == null)
+            while (ids.Count() < 2)
+            {
+                var next = random.Next(first.Id, last.Id);
+                if (!ids.Contains(next))
+                {
+                    ids.Add(next);
+                }
+            }
+
+            var starships = _context.Starships.Where(x => ids.Contains(x.Id)).ToList();
+            if (!starships.Any())
             {
                 throw new ArgumentNullException();
             }
-            
-            return starship;
+
+            return starships;
         }
     }
 }

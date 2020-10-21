@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using PeopleOrStarship.Data;
 using PeopleOrStarship.Data.Entities;
@@ -8,21 +9,19 @@ namespace PeopleOrStarship.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class PeopleAndStarshipsController : ControllerBase
+    public class PeopleController : ControllerBase
     {
         private readonly IRandomizeService _randomizeService;
 
-        public PeopleAndStarshipsController(IRandomizeService randomizeService)
+        public PeopleController(IRandomizeService randomizeService)
         {
             _randomizeService = randomizeService;
         }
 
-        [HttpGet(Name = "GetPeople")]
-        public IActionResult GetPeople()
+        [HttpGet]
+        public IActionResult Get()
         {
-            var result = new List<People>();
-            result.Add(_randomizeService.Get());
-            result.Add(_randomizeService.Get());
+            var result = _randomizeService.Get();
 
             return Ok(result);
         }

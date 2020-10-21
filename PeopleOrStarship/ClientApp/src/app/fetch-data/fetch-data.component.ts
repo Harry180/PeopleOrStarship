@@ -21,3 +21,11 @@ interface WeatherForecast {
   temperatureF: number;
   summary: string;
 }
+
+interface Person {
+  Id: number,
+  FirstName: string,
+  LastName: string,
+  MassCount: number,
+  WinCount: number
+}
