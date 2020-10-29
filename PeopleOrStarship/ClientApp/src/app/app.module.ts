@@ -12,6 +12,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {PeopleComponent} from "./people/people.component";
 import {MatCardModule} from "@angular/material/card";
+import {StarshipComponent} from "./starship/starship.component";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {MatCardModule} from "@angular/material/card";
     HomeComponent,
     CounterComponent,
     FetchDataComponent,
-    PeopleComponent
+    PeopleComponent,
+    StarshipComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'ng-cli-universal'}),
@@ -28,7 +30,8 @@ import {MatCardModule} from "@angular/material/card";
     FormsModule,
     RouterModule.forRoot([
       {path: '', component: HomeComponent, pathMatch: 'full'},
-      {path: 'people', component: PeopleComponent}
+      {path: 'peoplefight', component: PeopleComponent},
+      {path: 'starshipsfight', component: StarshipComponent }
     ]),
     BrowserAnimationsModule,
     MatCardModule

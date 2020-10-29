@@ -1,10 +1,17 @@
 import {Person} from "../app/dto/Person";
+import {Starship} from "../app/dto/Starship";
 
 export default class FightService {
-    static fight = (personLeft: Person, personRight:Person) => {
-    if(personLeft.massCount === personRight.massCount){
+  static fight = (left: Person, right: Person) => {
+    if (left.mass === right.mass) {
       return null;
     }
-    return personLeft.massCount > personRight.massCount ? personLeft: personRight;
+    return left.mass > right.mass ? left : right;
+  }
+  static starshipBattle = (left: Starship, right: Starship) => {
+    if (left.crew === right.crew) {
+      return null;
+    }
+    return left.crew > right.crew ? left : right;
   }
 }

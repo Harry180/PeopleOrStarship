@@ -1,0 +1,9 @@
+.example-card {
+  max-width: 400px;
+  min-width: 400px;
+  display: inline-block;
+  margin: 0px 10px;
+}
+.example-card button{
+  display: block;
+}
