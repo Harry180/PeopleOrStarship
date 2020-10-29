@@ -1,5 +1,4 @@
 using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace PeopleOrStarship.Data.Entities
 {
@@ -14,7 +13,7 @@ namespace PeopleOrStarship.Data.Entities
         public string SkinColor { get; set; }
         public string EyeColor { get; set; }
         public string BirthYear { get; set; }
-        public string Male { get; set; }
+        public string Gender { get; set; }
         public int WinCount { get; set; }
     }
 }

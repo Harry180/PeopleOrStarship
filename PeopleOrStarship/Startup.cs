@@ -7,6 +7,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using PeopleOrStarship.Data;
 using Microsoft.EntityFrameworkCore;
+using PeopleOrStarship.Data.Entities;
+using PeopleOrStarship.Data.Repositories;
 using PeopleOrStarship.Service;
 
 namespace PeopleOrStarship
@@ -29,7 +31,9 @@ namespace PeopleOrStarship
             });
 
             services.AddTransient<Seeder>();
-            services.AddTransient<IRandomizeService, RandomizeService>();
+            services.AddScoped<IRandomizeService, RandomizeService>();
+            services.AddScoped<IRepository<Person>, PeopleRepository>();
+            services.AddScoped<IRepository<Starship>, StarshipRepository>();
             
             services.AddControllersWithViews();
             // In production, the Angular files will be served from this directory

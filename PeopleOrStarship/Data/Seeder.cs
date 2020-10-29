@@ -26,7 +26,7 @@ namespace PeopleOrStarship.Data
             {
                 var filePath = Path.Combine(_hosting.ContentRootPath, "Data/people.json");
                 var json = File.ReadAllText(filePath);
-                var peoples = JsonConvert.DeserializeObject<IEnumerable<People>>(json);
+                var peoples = JsonConvert.DeserializeObject<IEnumerable<Person>>(json);
                 _context.Peoples.AddRange(peoples);
             }
 

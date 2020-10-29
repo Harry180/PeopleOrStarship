@@ -5,7 +5,7 @@ namespace PeopleOrStarship.Service
 {
     public interface IRandomizeService
     {
-        List<People> Get();
+        List<Person> Get();
         List<Starship> GetStarship();
     }
 }

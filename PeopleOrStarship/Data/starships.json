@@ -1,30 +1,142 @@
-[{
-  "Name": "Netflix",
-  "CrewCount": 100,
-  "WinCount": 0
-},
+[
   {
-    "Name": "DC",
-    "CrewCount": 4,
-    "WinCount": 0
+    "Name": "CR90 corvette",
+    "Model": "CR90 corvette",
+    "Manufacturer": "Corellian Engineering Corporation",
+    "CostInCredits": "3500000",
+    "Length": "150",
+    "MaxAtmospheringSpeed": "950",
+    "Crew": "165",
+    "Passengers": "600",
+    "CargoCapacity": "3000000",
+    "Consumables": "1 year",
+    "HyperdriveRating": "2.0",
+    "StarshipClass": "corvette"
   },
   {
-    "Name": "Marvel",
-    "CrewCount": 1000,
-    "WinCount": 0
+    "Name": "Star Destroyer",
+    "Model": "Imperial I-class Star Destroyer",
+    "Manufacturer": "Kuat Drive Yards",
+    "CostInCredits": "150000000",
+    "Length": "1600",
+    "MaxAtmospheringSpeed": "975",
+    "Crew": "47060",
+    "Passengers": "5000",
+    "CargoCapacity": "36000000",
+    "Consumables": "2 years",
+    "HyperdriveRating": "2.0",
+    "StarshipClass": "Star Destroyer"
   },
   {
-    "Name": "Amazon prime",
-    "CrewCount": 11,
-    "WinCount": 0
+    "Name": "Sentinel-class landing craft",
+    "Model": "Sentinel-class landing craft",
+    "Manufacturer": "Sienar Fleet Systems, Cyngus Spaceworks",
+    "CostInCredits": "240000",
+    "Length": "38",
+    "MaxAtmospheringSpeed": "1000",
+    "Crew": "5",
+    "Passengers": "75",
+    "CargoCapacity": "180000",
+    "Consumables": "1 month",
+    "HyperdriveRating": "1.0",
+    "StarshipClass": "landing craft"
   },
   {
-    "Name": "HboGo",
-    "CrewCount": 37,
-    "WinCount": 0
+    "Name": "Death Star",
+    "Model": "DS-1 Orbital Battle Station",
+    "Manufacturer": "Imperial Department of Military Research, Sienar Fleet Systems",
+    "CostInCredits": "1000000000000",
+    "Length": "120000",
+    "MaxAtmospheringSpeed": "n/a",
+    "Crew": "342953",
+    "Passengers": "843342",
+    "CargoCapacity": "1000000000000",
+    "Consumables": "3 years",
+    "HyperdriveRating": "4.0",
+    "StarshipClass": "Deep Space Mobile Battlestation"
   },
   {
-    "Name": "Disney+",
-    "CrewCount": 40,
-    "WinCount": 0
-  }]
+    "Name": "Millennium Falcon",
+    "Model": "YT-1300 light freighter",
+    "Manufacturer": "Corellian Engineering Corporation",
+    "CostInCredits": "100000",
+    "Length": "3437",
+    "MaxAtmospheringSpeed": "1050",
+    "Crew": "4",
+    "Passengers": "6",
+    "CargoCapacity": "100000",
+    "Consumables": "2 months",
+    "HyperdriveRating": "0.5",
+    "StarshipClass": "Light freighter"
+  },
+  {
+    "Name": "Y-wing",
+    "Model": "BTL Y-wing",
+    "Manufacturer": "Koensayr Manufacturing",
+    "CostInCredits": "134999",
+    "Length": "14",
+    "MaxAtmospheringSpeed": "1000km",
+    "Crew": "2",
+    "Passengers": "0",
+    "CargoCapacity": "110",
+    "Consumables": "1 week",
+    "HyperdriveRating": "1.0",
+    "StarshipClass": "assault starfighter"
+  },
+  {
+    "Name": "X-wing",
+    "Model": "T-65 X-wing",
+    "Manufacturer": "Incom Corporation",
+    "CostInCredits": "149999",
+    "Length": "125",
+    "MaxAtmospheringSpeed": "1050",
+    "Crew": "1",
+    "Passengers": "0",
+    "CargoCapacity": "110",
+    "Consumables": "1 week",
+    "HyperdriveRating": "1.0",
+    "StarshipClass": "Starfighter"
+  },
+  {
+    "Name": "TIE Advanced x1",
+    "Model": "Twin Ion Engine Advanced x1",
+    "Manufacturer": "Sienar Fleet Systems",
+    "CostInCredits": "100000",
+    "Length": "92",
+    "MaxAtmospheringSpeed": "1200",
+    "Crew": "1",
+    "Passengers": "0",
+    "CargoCapacity": "150",
+    "Consumables": "5 days",
+    "HyperdriveRating": "1.0",
+    "StarshipClass": "Starfighter"
+  },
+  {
+    "Name": "Executor",
+    "Model": "Executor-class star dreadnought",
+    "Manufacturer": "Kuat Drive Yards, Fondor Shipyards",
+    "CostInCredits": "1143350000",
+    "Length": "19000",
+    "MaxAtmospheringSpeed": "n/a",
+    "Crew": "279144",
+    "Passengers": "38000",
+    "CargoCapacity": "250000000",
+    "Consumables": "6 years",
+    "HyperdriveRating": "2.0",
+    "StarshipClass": "Star dreadnought"
+  },
+  {
+    "Name": "Rebel transport",
+    "Model": "GR-75 medium transport",
+    "Manufacturer": "Gallofree Yards, Inc.",
+    "CostInCredits": "2000000",
+    "Length": "90",
+    "MaxAtmospheringSpeed": "650",
+    "Crew": "6",
+    "Passengers": "90",
+    "CargoCapacity": "19000000",
+    "Consumables": "6 months",
+    "HyperdriveRating": "4.0",
+    "StarshipClass": "Medium transport"
+  }
+]

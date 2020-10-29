@@ -1,32 +1,102 @@
 [
   {
-    "FirstName": "John",
-    "LastName": "Doe",
-    "MassCount": 0,
-    "WinCount": 0
+    "Name": "Luke Skywalker",
+    "Height": "172",
+    "Mass": "77",
+    "HairColor": "blond",
+    "SkinColor": "fair",
+    "EyeColor": "blue",
+    "BirthYear": "19BBY",
+    "Gender": "male"
   },
   {
-    "FirstName": "Johny",
-    "LastName": "Doey",
-    "MassCount": 20,
-    "WinCount": 0
+    "Name": "C-3PO",
+    "Height": "167",
+    "Mass": "75",
+    "HairColor": "n/a",
+    "SkinColor": "gold",
+    "EyeColor": "yellow",
+    "BirthYear": "112BBY",
+    "Gender": "n/a"
   },
   {
-    "FirstName": "Johnson",
-    "LastName": "Baby",
-    "MassCount": 1,
-    "WinCount": 0
+    "Name": "R2-D2",
+    "Height": "96",
+    "Mass": "32",
+    "HairColor": "n/a",
+    "SkinColor": "white, blue",
+    "EyeColor": "red",
+    "BirthYear": "33BBY",
+    "Gender": "n/a"
   },
   {
-    "FirstName": "Motylek",
-    "LastName": "Zenek",
-    "MassCount": 6,
-    "WinCount": 0
+    "Name": "Darth Vader",
+    "Height": "202",
+    "Mass": "136",
+    "HairColor": "none",
+    "SkinColor": "white",
+    "EyeColor": "yellow",
+    "BirthYear": "41.9BBY",
+    "Gender": "male"
   },
   {
-    "FirstName": "Chase",
-    "LastName": "Pies",
-    "MassCount": 2,
-    "WinCount": 0
+    "Name": "Leia Organa",
+    "Height": "150",
+    "Mass": "49",
+    "HairColor": "brown",
+    "SkinColor": "light",
+    "EyeColor": "brown",
+    "BirthYear": "19BBY",
+    "Gender": "female"
+  },
+  {
+    "Name": "Owen Lars",
+    "Height": "178",
+    "Mass": "120",
+    "HairColor": "brown, grey",
+    "SkinColor": "light",
+    "EyeColor": "blue",
+    "BirthYear": "52BBY",
+    "Gender": "male"
+  },
+  {
+    "Name": "Beru Whitesun lars",
+    "Height": "165",
+    "Mass": "75",
+    "HairColor": "brown",
+    "SkinColor": "light",
+    "EyeColor": "blue",
+    "BirthYear": "47BBY",
+    "Gender": "female"
+  },
+  {
+    "Name": "R5-D4",
+    "Height": "97",
+    "Mass": "32",
+    "HairColor": "n/a",
+    "SkinColor": "white, red",
+    "EyeColor": "red",
+    "BirthYear": "unknown",
+    "Gender": "n/a"
+  },
+  {
+    "Name": "Biggs Darklighter",
+    "Height": "183",
+    "Mass": "84",
+    "HairColor": "black",
+    "SkinColor": "light",
+    "EyeColor": "brown",
+    "BirthYear": "24BBY",
+    "Gender": "male"
+  },
+  {
+    "Name": "Obi-Wan Kenobi",
+    "Height": "182",
+    "Mass": "77",
+    "HairColor": "auburn, white",
+    "SkinColor": "fair",
+    "EyeColor": "blue-gray",
+    "BirthYear": "57BBY",
+    "Gender": "male"
   }
 ]

@@ -10,7 +10,13 @@ namespace PeopleOrStarship.Data
             
         }
         
-        public DbSet<People> Peoples { get; set; }
+        public DbSet<Person> Peoples { get; set; }
         public DbSet<Starship> Starships { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Person>().ToTable("People");
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }

@@ -17,7 +17,7 @@ namespace PeopleOrStarship.Service
         }
 
         [HttpGet]
-        public List<People> Get()
+        public List<Person> Get()
         {
             var orderBy = _context.Peoples.OrderBy(x => x.Id);
             var first = orderBy.FirstOrDefault();
@@ -60,7 +60,7 @@ namespace PeopleOrStarship.Service
             var ids = new List<int>();
             if (first == null || last == null)
             {
-                throw new ArgumentException("People not exists in db.");
+                throw new ArgumentException("Starships not exists in db.");
             }
 
             while (ids.Count() < 2)
